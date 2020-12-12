@@ -35,7 +35,7 @@ class ex2(ex):
                 print(self.fullname, "is", self.age, "years old")
                 print("you are overweight")
                 print("you have to loss some weight")
-         except:
+        except:
             print(self.fullname, "is", self.age, "years old")
             print("you are severely overweight")
             print("you have to lose weight")
