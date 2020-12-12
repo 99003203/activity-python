@@ -1,0 +1,45 @@
+class ex:
+    def __init__(self):
+
+        self.firstname = input("Enter your firstname:")
+        self.lastname = input("Enter your lastname")
+        self.fullname = self.firstname+" "+self.lastname
+        self.age = int(input("Enter your age"))
+        print("Enter height in ft and inches: ")
+        self.ft = int(input())
+        self.inch = float(input())
+        self.weight = float(input("Enter weight in kg: "))
+        self.height_in_m = self.ft*0.3048 + self.inch*0.0254
+        self.bmi = self.weight/(self.height_in_m**2)
+
+
+class ex2(ex):
+
+    def timer(self):
+
+        try:
+
+            if (self.bmi < 16):
+                print(self.fullname, "is", self.age, "years old")
+                print("you are severly underweight")
+                print("you have to gain weight")
+            elif (self.bmi >= 16 and self.bmi < 18.5):
+                print(self.fullname, "is ", self.age, "years old")
+                print("you are underweight")
+                print("you have to gain some weight")
+            elif (self.bmi >= 18.5 and self.bmi < 25):
+                print(self.fullname, "is", self.age, "years old")
+                print("you are Healthy")
+                print("stay healthy")
+            elif (self.bmi >= 25 and self.bmi < 30):
+                print(self.fullname, "is", self.age, "years old")
+                print("you are overweight")
+                print("you have to loss some weight")
+            except:
+                print(self.fullname, "is", self.age, "years old")
+                print("you are severely overweight")
+                print("you have to lose weight")
+print("\n*********BMICalculator*********")
+
+var = ex2()
+var.timer()
