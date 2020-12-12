@@ -35,10 +35,10 @@ class ex2(ex):
                 print(self.fullname, "is", self.age, "years old")
                 print("you are overweight")
                 print("you have to loss some weight")
-            except:
-                print(self.fullname, "is", self.age, "years old")
-                print("you are severely overweight")
-                print("you have to lose weight")
+         except:
+            print(self.fullname, "is", self.age, "years old")
+            print("you are severely overweight")
+            print("you have to lose weight")
 print("\n*********BMICalculator*********")
 
 var = ex2()
