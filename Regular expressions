@@ -1,0 +1,2 @@
+import re
+print("[a-z]+.[a-z]+@[a-z]+.[a-z]+", "naveen.pappuru@ltts.com")
